@@ -15,17 +15,12 @@ public class AppConfig {
     }
 
     @Bean
-    public Deth8 getDeath8() {
-        return new Deth8();
-    }
-
-    @Bean
     public Needle7 getNeedle7(Deth8 deth8) {
         return new Needle7(deth8);
     }
 
     @Bean
-    public Egg6 getEgg6(Needle7 needle7) {
-        return new Egg6(needle7);
+    public Egg6 getEgg6() {
+        return new Egg6();
     }
 }
